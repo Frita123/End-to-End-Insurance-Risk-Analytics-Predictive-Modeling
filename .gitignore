@@ -1,3 +1,20 @@
+
+#data/
+# Ignore raw datasets
+data/raw/*.txt
+data/raw/*.csv
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+.venv/
+
+# But allow DVC metafiles
+!*.dvc
+
+dvc_storage/
 # ------------------------
 # Python
 # ------------------------
