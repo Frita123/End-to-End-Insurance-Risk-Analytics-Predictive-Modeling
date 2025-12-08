@@ -1,5 +1,14 @@
+
+#data/
+# Ignore raw datasets
+data/raw/*.txt
+data/raw/*.csv
+
+# Ignore Python cache
 __pycache__/
 *.pyc
+
+# Ignore virtual environment
 .venv/
 .env
 data/raw/*
@@ -14,3 +23,76 @@ dvc_storage/
 
 *.dvc
 
+
+# But allow DVC metafiles
+!*.dvc
+
+dvc_storage/
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyd
+*.pyo
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------
+# VS Code
+# ------------------------
+.vscode/
+*.code-workspace
+
+# ------------------------
+# Jupyter Notebook
+# ------------------------
+.ipynb_checkpoints
+
+# ------------------------
+# DVC
+# ------------------------
+#.dvc/
+dvc_storage/
+#*.dvc
+.dvcignore
+
+# ------------------------
+# Git
+# ------------------------
+*.log
+*.lock
+*.tmp
+*.swp
+*.bak
+*.orig
+*.rej
+
+# ------------------------
+# OS Files
+# ------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------
+# IDE / Editor
+# ------------------------
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------
+# Data files (optional if large)
+# ------------------------
+data/raw/*.csv
+data/raw/*.txt
+# Note: track only small datasets with DVC, ignore large raw files if using DVC
