@@ -4,4 +4,13 @@ __pycache__/
 .env
 data/raw/*
 .ipynb_checkpoints/
-#data/
+data/
+
+# Ignore DVC cache, not the config folder
+dvc_storage/
+
+# Ignore DVC ignore file (optional)
+.dvcignore
+
+*.dvc
+
