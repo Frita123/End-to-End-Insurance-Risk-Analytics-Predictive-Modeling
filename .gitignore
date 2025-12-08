@@ -10,6 +10,19 @@ __pycache__/
 
 # Ignore virtual environment
 .venv/
+.env
+data/raw/*
+.ipynb_checkpoints/
+data/
+
+# Ignore DVC cache, not the config folder
+dvc_storage/
+
+# Ignore DVC ignore file (optional)
+.dvcignore
+
+*.dvc
+
 
 # But allow DVC metafiles
 !*.dvc
